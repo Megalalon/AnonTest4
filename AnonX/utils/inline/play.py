@@ -374,8 +374,7 @@ def panel_markup_1(_, videoid, chat_id):
                 callback_data=f"add_playlist {videoid}",
             ),
             InlineKeyboardButton(
-                text=_["S_B_3"],
-                url=config.SUPPORT_GROUP",
+               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
             ),
         ],
         [
