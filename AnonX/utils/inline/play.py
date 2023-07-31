@@ -42,21 +42,30 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             )
         ],
         [
-            IInlineKeyboardButton(
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
             ),
             InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -90,8 +99,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
+                text="↻ close ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -136,17 +144,23 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
             ),
             InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -180,8 +194,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
+                text="↻ close ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -195,17 +208,26 @@ def stream_markup(_, videoid, chat_id):
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
             ),
             InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -239,8 +261,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
+                text="↻ close ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -254,17 +275,23 @@ def telegram_markup(_, chat_id):
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
             ),
             InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -298,8 +325,7 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
+                text="↻ close ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -435,21 +461,30 @@ close_keyboard = InlineKeyboardMarkup(
 def queue_markup(_, videoid, chat_id):
     buttons = [
         [
-           InlineKeyboardButton(
+            InlineKeyboardButton(
                 text="▷",
                 callback_data=f"ADMIN Resume|{chat_id}",
             ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(
+                text="II", callback_data=f"ADMIN Pause|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
+                text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="▢", callback_data=f"ADMIN Stop|{chat_id}"
+            ),
         ],
         [
             InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
+                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
             ),
             InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -483,69 +518,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
-            ),
-        ],
-    ]
-    return buttons
-
-## Cpanel Markup
-
-
-def panel_markup_1(_, videoid, chat_id):
-    buttons = [
-        [
-            InlineKeyboardButton(
-                text="▷",
-                callback_data=f"ADMIN Resume|{chat_id}",
-            ),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_2"],
-                callback_data=f"add_playlist {videoid}",
-            ),
-            InlineKeyboardButton(
-               text="❄️ 𝐔ᴘᴅᴀᴛᴇꜱ ❄️", url=f"https://t.me/FileStore_Bots_Updates",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
-                callback_data=f"ADMIN Shuffle|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⏮ 10 sᴇᴄᴏɴᴅ",
-                callback_data=f"ADMIN 1|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="⏭ 10 sᴇᴄᴏɴᴅ",
-                callback_data=f"ADMIN 2|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="⏮ 30 sᴇᴄᴏɴᴅ",
-                callback_data=f"ADMIN 3|{chat_id}",
-            ),
-            InlineKeyboardButton(
-                text="⏭ 30 sᴇᴄᴏɴᴅ",
-                callback_data=f"ADMIN 4|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ ʙᴀᴄᴋ ↻",
-                callback_data=f"MainMarkup {videoid}|{chat_id}",
+                text="↻ close ↻", callback_data=f"close"
             ),
         ],
     ]
