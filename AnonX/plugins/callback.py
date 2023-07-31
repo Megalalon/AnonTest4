@@ -82,6 +82,9 @@ async def del_back_playlist(client, CallbackQuery, _):
         checker[chat_id] = {}
     checker[chat_id][CallbackQuery.message.message_id] = True
 
+downvote = {}
+downvoters = {}
+
 
 @app.on_callback_query(filters.regex("unban_assistant"))
 async def unban_assistant_(_, CallbackQuery):
@@ -91,7 +94,7 @@ async def unban_assistant_(_, CallbackQuery):
     a = await app.get_chat_member(int(chat_id), app.id)
     if not a.can_restrict_members:
         return await CallbackQuery.answer(
-            "ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴜɴʙᴀɴ ᴜsᴇʀs ɪɴ ᴛʜɪs ᴄʜᴀᴛ.",
+            "ɪ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴘᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴜɴʙᴀɴ ᴜsᴇʀs ɪɴ ᴛʜɪs ᴄʜᴀᴛ..",
             show_alert=True,
         )
     else:
@@ -106,8 +109,6 @@ async def unban_assistant_(_, CallbackQuery):
             "ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ ᴜɴʙᴀɴɴᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ.\n\nᴛʀʏ ᴘʟᴀʏɪɴɢ ɴᴏᴡ..."
         )
 
-downvote = {}
-downvoters = {}
 
 @app.on_callback_query(filters.regex("ADMIN") & ~BANNED_USERS)
 @languageCB
@@ -186,27 +187,58 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_23"].format(mention)
         )
+    elif command == "Mute":
+        if await is_muted(chat_id):
+            return await CallbackQuery.answer(
+                _["admin_5"], show_alert=True
+            )
+        await CallbackQuery.answer()
+        await mute_on(chat_id)
+        await Anon.mute_stream(chat_id)
+        await CallbackQuery.message.reply_text(
+            _["admin_6"].format(mention)
+        )
+    elif command == "Unmute":
+        if not await is_muted(chat_id):
+            return await CallbackQuery.answer(
+                _["admin_7"], show_alert=True
+            )
+        await CallbackQuery.answer()
+        await mute_off(chat_id)
+        await Anon.unmute_stream(chat_id)
+        await CallbackQuery.message.reply_text(
+            _["admin_8"].format(mention)
+        )
     elif command == "Loop":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
-        await CallbackQuery.message.reply_text(_["admin_25"].format(mention, 3))
+        await CallbackQuery.message.reply_text(
+            _["admin_25"].format(mention, 3)
+        )
     elif command == "Shuffle":
         check = db.get(chat_id)
         if not check:
-            return await CallbackQuery.answer(_["admin_21"], show_alert=True)
+            return await CallbackQuery.answer(
+                _["admin_21"], show_alert=True
+            )
         try:
             popped = check.pop(0)
         except:
-            return await CallbackQuery.answer(_["admin_22"], show_alert=True)
+            return await CallbackQuery.answer(
+                _["admin_22"], show_alert=True
+            )
         check = db.get(chat_id)
         if not check:
             check.insert(0, popped)
-            return await CallbackQuery.answer(_["admin_22"], show_alert=True)
+            return await CallbackQuery.answer(
+                _["admin_22"], show_alert=True
+            )
         await CallbackQuery.answer()
         random.shuffle(check)
         check.insert(0, popped)
         await CallbackQuery.message.reply_text(
-            _["admin_23"].format(mention), disable_web_page_preview=True  
+            _["admin_23"].format(mention)
+        )  
     elif command == "Skip":
         check = db.get(chat_id)
         txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🥺\n│ \n└ʙʏ : {mention} 🥀"
