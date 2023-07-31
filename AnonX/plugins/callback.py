@@ -186,20 +186,6 @@ async def del_back_playlist(client, CallbackQuery, _):
         await CallbackQuery.message.reply_text(
             _["admin_23"].format(mention)
         )
-     elif command == "Mute":
-        if await is_muted(chat_id):
-            return await CallbackQuery.answer(_["admin_5"], show_alert=True)
-        await CallbackQuery.answer()
-        await mute_on(chat_id)
-        await Anon.mute_stream(chat_id)
-        await CallbackQuery.message.reply_text(_["admin_6"].format(mention))
-    elif command == "Unmute":
-        if not await is_muted(chat_id):
-            return await CallbackQuery.answer(_["admin_7"], show_alert=True)
-        await CallbackQuery.answer()
-        await mute_off(chat_id)
-        await Anon.unmute_stream(chat_id)
-        await CallbackQuery.message.reply_text(_["admin_8"].format(mention))
     elif command == "Loop":
         await CallbackQuery.answer()
         await set_loop(chat_id, 3)
