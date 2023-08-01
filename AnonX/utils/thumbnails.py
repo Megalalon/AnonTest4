@@ -1,7 +1,8 @@
+import asyncio
 import os
 import re
 import textwrap
-
+import random
 import aiofiles
 import aiohttp
 import numpy as np
@@ -11,6 +12,9 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
 from AnonX import app
+
+def make_col():
+    return (random.randint(0,255),random.randint(0,255),random.randint(0,255))
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -308,6 +312,12 @@ async def gen_qthumb(videoid, user_id):
         file = f"cache/que{videoid}_{user_id}.png"
         background.save(f"cache/que{videoid}_{user_id}.png")
         return f"cache/que{videoid}_{user_id}.png"
+
+        image2 = ImageOps.expand(image2,border=20,fill=make_col())
+            image2 = image2.convert('RGB')
+            image2.save(f"cache/{videoid}.jpg")
+            file = f"cache/{videoid}.jpg"
+            return file
     except Exception as e:
         print(e)
         return YOUTUBE_IMG_URL
