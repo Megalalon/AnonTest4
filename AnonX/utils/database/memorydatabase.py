@@ -21,6 +21,7 @@ playmode = {}
 channelconnect = {}
 langm = {}
 pause = {}
+mute = {}
 audio = {}
 video = {}
 active = []
@@ -154,6 +155,22 @@ async def set_lang(chat_id: int, lang: str):
     await langdb.update_one(
         {"chat_id": chat_id}, {"$set": {"lang": lang}}, upsert=True
     )
+
+
+# Muted
+async def is_muted(chat_id: int) -> bool:
+    mode = mute.get(chat_id)
+    if not mode:
+        return False
+    return mode
+
+
+async def mute_on(chat_id: int):
+    mute[chat_id] = True
+
+
+async def mute_off(chat_id: int):
+    mute[chat_id] = False
 
 
 # Pause-Skip
