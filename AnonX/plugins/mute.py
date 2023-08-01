@@ -3,7 +3,7 @@ from pyrogram.types import Message
 
 from config import BANNED_USERS
 from strings import get_command
-from YukkiMusic import app
+from AnonX import app
 from AnonX.core.call import Anon
 from AnonX.utils.database import is_muted, mute_on
 from AnonX.utils.decorators import AdminRightsCheck
