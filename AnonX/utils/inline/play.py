@@ -61,15 +61,6 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
-            ),
-            InlineKeyboardButton(
-                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
-                url=f"https://t.me/Alinallmovies",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text="⇆ sʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
@@ -99,16 +90,11 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="🔊 Unmute",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ close ↻", callback_data=f"close"
+                text="✪ close ✪", callback_data=f"close"
             ),
         ],
     ]
@@ -157,19 +143,13 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
-            ),
-            InlineKeyboardButton(
-                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
-                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -199,20 +179,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
-            ),
+            ),           
         ],
         [
             InlineKeyboardButton(
-                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="🔊 Unmute",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ close ↻", callback_data=f"close"
+                text="✪ close ✪", callback_data=f"close"
             ),
         ],
     ]
@@ -241,15 +216,6 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
-            ),
-            InlineKeyboardButton(
-                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
-                url=f"https://t.me/Alinallmovies",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text="⇆ sʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
@@ -275,20 +241,15 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
-            ),
+            ),           
         ],
         [
             InlineKeyboardButton(
-                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="🔊 Unmute",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ close ↻", callback_data=f"close"
+                text="✪ close ✪", callback_data=f"close"
             ),
         ],
     ]
@@ -306,19 +267,13 @@ def telegram_markup(_, chat_id):
                 text="II", callback_data=f"ADMIN Pause|{chat_id}"
             ),
             InlineKeyboardButton(
+                text="☆", callback_data=f"add_playlist {videoid}"
+            ),
+            InlineKeyboardButton(
                 text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"
             ),
             InlineKeyboardButton(
                 text="▢", callback_data=f"ADMIN Stop|{chat_id}"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
-            ),
-            InlineKeyboardButton(
-                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
-                url=f"https://t.me/Alinallmovies",
             ),
         ],
         [
@@ -348,20 +303,15 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
-            ),
+            ),           
         ],
         [
             InlineKeyboardButton(
-                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="🔊 Unmute",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ close ↻", callback_data=f"close"
+                text="✪ close ✪", callback_data=f"close"
             ),
         ],
     ]
@@ -516,15 +466,6 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="🥀 𝐎ᴡɴᴇʀ 🥀", url=f"https://t.me/thavarajtj"
-            ),
-            InlineKeyboardButton(
-                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
-                url=f"https://t.me/Alinallmovies",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text="⇆ sʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
@@ -550,20 +491,15 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
-            ),
+            ),           
         ],
         [
             InlineKeyboardButton(
-                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+                text="❄️ 𝐂ʜᴀɴɴᴇʟ ❄️",
+                url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="🔊 Unmute",
-                callback_data=f"ADMIN Unmute|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="↻ close ↻", callback_data=f"close"
+                text="✪ close ✪", callback_data=f"close"
             ),
         ],
     ]
