@@ -95,6 +95,15 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
+            ),           
+        ],
+        [
+            InlineKeyboardButton(
+                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊 Unmute",
+                callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
@@ -194,6 +203,15 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
+                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊 Unmute",
+                callback_data=f"ADMIN Unmute|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text="↻ close ↻", callback_data=f"close"
             ),
         ],
@@ -261,6 +279,15 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
+                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊 Unmute",
+                callback_data=f"ADMIN Unmute|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
                 text="↻ close ↻", callback_data=f"close"
             ),
         ],
@@ -321,6 +348,15 @@ def telegram_markup(_, chat_id):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊 Unmute",
+                callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
@@ -514,6 +550,15 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="⏭ 30 sᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="🔇 Mute", callback_data=f"ADMIN Mute|{chat_id}"
+            ),
+            InlineKeyboardButton(
+                text="🔊 Unmute",
+                callback_data=f"ADMIN Unmute|{chat_id}",
             ),
         ],
         [
