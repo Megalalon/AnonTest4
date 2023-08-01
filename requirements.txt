@@ -8,13 +8,13 @@ hachoir
 heroku3
 lyricsgenius
 motor==3.0.0
-pillow
+pillow==9.5.0
 psutil
 py-tgcalls==0.8.6
 pykeyboard
 pyrogram==1.4.16
 python-dotenv
-pyyaml
+pyyaml==5.3.1
 requests
 speedtest-cli
 spotipy
