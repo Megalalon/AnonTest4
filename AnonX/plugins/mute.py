@@ -28,4 +28,4 @@ async def mute_admin(cli, message: Message, _, chat_id):
     await Anon.mute_stream(chat_id)
     await message.reply_text(
         _["admin_6"].format(message.from_user.mention)
-    )￼Enter
+    )
