@@ -154,30 +154,30 @@ def telegram_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
+                text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                text="↻ 𝐋ᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 10 sᴇᴄᴏɴᴅ",
+                text="⏮ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 10 sᴇᴄᴏɴᴅ",
+                text="⏭ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 30 sᴇᴄᴏɴᴅ",
+                text="⏮ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 30 sᴇᴄᴏɴᴅ",
+                text="⏭ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
             ),           
         ],
@@ -187,7 +187,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="✪ close ✪", callback_data=f"close"
+                text="↻ 𝐂lose ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -216,30 +216,30 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
+                text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                text="↻ 𝐋ᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 10 sᴇᴄᴏɴᴅ",
+                text="⏮ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 10 sᴇᴄᴏɴᴅ",
+                text="⏭ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 30 sᴇᴄᴏɴᴅ",
+                text="⏮ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 30 sᴇᴄᴏɴᴅ",
+                text="⏭ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
             ),           
         ],
@@ -249,7 +249,7 @@ def stream_markup(_, videoid, chat_id):
                 url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="✪ close ✪", callback_data=f"close"
+                text="↻ 𝐂lose ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -278,30 +278,30 @@ def telegram_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
+                text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                text="↻ 𝐋ᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 10 sᴇᴄᴏɴᴅ",
+                text="⏮ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 10 sᴇᴄᴏɴᴅ",
+                text="⏭ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 30 sᴇᴄᴏɴᴅ",
+                text="⏮ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 30 sᴇᴄᴏɴᴅ",
+                text="⏭ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
             ),           
         ],
@@ -311,7 +311,7 @@ def telegram_markup(_, chat_id):
                 url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="✪ close ✪", callback_data=f"close"
+                text="↻ 𝐂lose ↻", callback_data=f"close"
             ),
         ],
     ]
@@ -466,30 +466,30 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⇆ sʜᴜғғʟᴇ ⇆",
+                text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
                 callback_data=f"ADMIN Shuffle|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="↻ ʟᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                text="↻ 𝐋ᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 10 sᴇᴄᴏɴᴅ",
+                text="⏮ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 1|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 10 sᴇᴄᴏɴᴅ",
+                text="⏭ 10 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 2|{chat_id}",
             ),
         ],
         [
             InlineKeyboardButton(
-                text="⏮ 30 sᴇᴄᴏɴᴅ",
+                text="⏮ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 3|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="⏭ 30 sᴇᴄᴏɴᴅ",
+                text="⏭ 30 𝐒ᴇᴄᴏɴᴅ",
                 callback_data=f"ADMIN 4|{chat_id}",
             ),           
         ],
@@ -499,7 +499,7 @@ def queue_markup(_, videoid, chat_id):
                 url=f"https://t.me/Alinallmovies",
             ),
             InlineKeyboardButton(
-                text="✪ close ✪", callback_data=f"close"
+                text="↻ 𝐂lose ↻", callback_data=f"close"
             ),
         ],
     ]
