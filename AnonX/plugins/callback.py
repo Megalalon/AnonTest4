@@ -22,6 +22,8 @@ from AnonX.utils.database import (
     is_nonadmin_chat,
     music_off,
     music_on,
+    mute_off, 
+    mute_on,
     set_loop,
 )
 from AnonX.utils.decorators.language import languageCB
