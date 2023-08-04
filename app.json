@@ -61,6 +61,16 @@
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
         "value": "",
         "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "If you dont know this, Leave as it is",
+        "value": "https://github.com/Megalalon/AnonTest2",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
       }
     },
     "buildpacks": [
@@ -73,6 +83,15 @@
           {
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "Eco"
+          }
+      },
+      "stack": "container"
+}
       ],
       "stack": "container"
   }
