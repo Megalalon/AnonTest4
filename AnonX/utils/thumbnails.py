@@ -135,7 +135,7 @@ async def gen_thumb(videoid, user_id):
             if para[0]:
                 text_w, text_h = draw.textsize(f"{para[0]}", font=font)
                 draw.text(
-                    (550, 300),
+                    (500, 300),
                     f"{para[0]}",
                     fill="white",
                     stroke_width=1,
@@ -145,7 +145,7 @@ async def gen_thumb(videoid, user_id):
             if para[1]:
                 text_w, text_h = draw.textsize(f"{para[1]}", font=font)
                 draw.text(
-                    (550, 350),
+                    (500, 350),
                     f"{para[1]}",
                     fill="white",
                     stroke_width=1,
@@ -156,7 +156,7 @@ async def gen_thumb(videoid, user_id):
             pass
         text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
         draw.text(
-            (550, 450),
+            (500, 450),
             f"Duration: {duration} Mins",
             fill="white",
             stroke_width=1,
@@ -277,7 +277,7 @@ async def gen_qthumb(videoid, user_id):
             if para[0]:
                 text_w, text_h = draw.textsize(f"{para[0]}", font=font)
                 draw.text(
-                    (600, 300),
+                    (500, 300),
                     f"{para[0]}",
                     fill="white",
                     stroke_width=1,
@@ -287,7 +287,7 @@ async def gen_qthumb(videoid, user_id):
             if para[1]:
                 text_w, text_h = draw.textsize(f"{para[1]}", font=font)
                 draw.text(
-                    (600, 350),
+                    (500, 350),
                     f"{para[1]}",
                     fill="white",
                     stroke_width=1,
@@ -298,7 +298,7 @@ async def gen_qthumb(videoid, user_id):
             pass
         text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
         draw.text(
-            (600, 450),
+            (500, 450),
             f"Duration: {duration} Mins",
             fill="white",
             stroke_width=1,
