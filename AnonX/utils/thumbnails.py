@@ -2,7 +2,7 @@ import asyncio
 import os
 import re
 import textwrap
-import random
+
 import aiofiles
 import aiohttp
 import numpy as np
@@ -12,9 +12,6 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from config import YOUTUBE_IMG_URL
 from AnonX import app
-
-def make_col():
-    return (random.randint(0,255),random.randint(0,255),random.randint(0,255))
 
 
 def changeImageSize(maxWidth, maxHeight, image):
@@ -104,7 +101,7 @@ async def gen_thumb(videoid, user_id):
         x2 = Xcenter + 250
         y2 = Ycenter + 250
         logo = youtube.crop((x1, y1, x2, y2))
-        logo.thumbnail((520, 520), Image.ANTIALIAS)
+        logo.thumbnail((520, 520), Image.LANCZOS)
         logo.save(f"cache/chop{videoid}.png")
         if not os.path.isfile(f"cache/cropped{videoid}.png"):
             im = Image.open(f"cache/chop{videoid}.png").convert("RGBA")
@@ -114,9 +111,9 @@ async def gen_thumb(videoid, user_id):
         crop_img = Image.open(f"cache/cropped{videoid}.png")
         logo = crop_img.convert("RGBA")
         logo.thumbnail((330, 330), Image.ANTIALIAS)
-        width = int((1280 - 330) / 2)
+        width = int((1280 - 330) / 20)
         background = Image.open(f"cache/temp{videoid}.png")
-        background.paste(logo, (width + 2, 138), mask=logo)
+        background.paste(logo, (width + 1, 40), mask=logo)
         background.paste(x, (53, 400), mask=x)
         background.paste(image3, (0, 0), mask=image3)
 
@@ -128,7 +125,7 @@ async def gen_thumb(videoid, user_id):
         para = textwrap.wrap(title, width=30)
         try:
             draw.text(
-                (590, 80),
+                (450, 25),
                 f"STARTED PLAYING",
                 fill="white",
                 stroke_width=3,
@@ -256,9 +253,9 @@ async def gen_qthumb(videoid, user_id):
         crop_img = Image.open(f"cache/cropped{videoid}.png")
         logo = crop_img.convert("RGBA")
         logo.thumbnail((330, 330), Image.ANTIALIAS)
-        width = int((1280 - 330) / 2)
+        width = int((1280 - 330) / 20)
         background = Image.open(f"cache/temp{videoid}.png")
-        background.paste(logo, (width + 2, 138), mask=logo)
+        background.paste(logo, (width + 1, 40), mask=logo)
         background.paste(x, (53, 400), mask=x)
         background.paste(image3, (0, 0), mask=image3)
 
@@ -270,11 +267,11 @@ async def gen_qthumb(videoid, user_id):
         para = textwrap.wrap(title, width=30)
         try:
             draw.text(
-                (590, 80),
+                (450, 25),
                 "ADDED TO QUEUE",
                 fill="white",
                 stroke_width=5,
-                stroke_fill="black",
+                stroke_fill="grey",
                 font=font,
             )
             if para[0]:
@@ -304,6 +301,8 @@ async def gen_qthumb(videoid, user_id):
             (600, 450),
             f"Duration: {duration} Mins",
             fill="white",
+            stroke_width=1,
+            stroke_fill="white",
             font=arial,
         )
 
