@@ -3,6 +3,8 @@ aiohttp
 asyncio
 dnspython
 ffmpeg-python
+flask
+flask_restful
 gitpython
 hachoir
 heroku3
