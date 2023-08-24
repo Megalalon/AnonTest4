@@ -295,7 +295,7 @@ async def gen_qthumb(videoid, user_id):
             if para[0]:
                 text_w, text_h = draw.textsize(f"{para[0]}", font=font)
                 draw.text(
-                    (470, 300),
+                    (470, 250),
                     f"{para[0]}",
                     fill="white",
                     stroke_width=1,
@@ -305,7 +305,7 @@ async def gen_qthumb(videoid, user_id):
             if para[1]:
                 text_w, text_h = draw.textsize(f"{para[1]}", font=font)
                 draw.text(
-                    (470, 350),
+                    (470, 300),
                     f"{para[1]}",
                     fill="white",
                     stroke_width=1,
@@ -316,14 +316,31 @@ async def gen_qthumb(videoid, user_id):
             pass
         text_w, text_h = draw.textsize(f"Duration: {duration} Mins", font=arial)
         draw.text(
-            (470, 450),
+            (470, 400),
             f"Duration: {duration} Mins",
             fill="white",
             stroke_width=1,
             stroke_fill="white",
             font=arial,
         )
-
+        text_w, text_h = draw.textsize(f"channel: {channel}", font=arial)
+        draw.text(
+            (470, 450),
+            f"channel: {channel}",
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=arial,
+        )
+        text_w, text_h = draw.textsize(f"views: {views[:23]}", font=arial)
+        draw.text(
+            (470, 500),
+            f"views: {views[:23]}",
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=arial,
+        )
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except:
