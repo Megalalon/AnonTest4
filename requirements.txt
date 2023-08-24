@@ -22,7 +22,6 @@ speedtest-cli
 spotipy
 tgcrypto
 numpy
-unidecode
 yt-dlp
 youtube-search
 youtube-search-python
