@@ -163,10 +163,22 @@ async def gen_thumb(videoid, user_id):
             stroke_fill="white",
             font=arial,
         )
+        text_w, text_h = draw.textsize(f"channel: {channel}", font=arial)
         draw.text(
-            (55, 560),
-            f"{channel} | {views[:23]}",
-            (255, 255, 255),
+            (470, 500),
+            f"channel: {channel}",
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
+            font=arial,
+        )
+        text_w, text_h = draw.textsize(f"views: {views[:23]}", font=arial)
+        draw.text(
+            (470, 550),
+            f"views: {views[:23]}",
+            fill="white",
+            stroke_width=1,
+            stroke_fill="white",
             font=arial,
         )
         try:
