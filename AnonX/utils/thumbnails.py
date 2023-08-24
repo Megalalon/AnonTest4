@@ -163,6 +163,12 @@ async def gen_thumb(videoid, user_id):
             stroke_fill="white",
             font=arial,
         )
+        draw.text(
+            (55, 560),
+            f"{channel} | {views[:23]}",
+            (255, 255, 255),
+            font=arial,
+        )
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except:
