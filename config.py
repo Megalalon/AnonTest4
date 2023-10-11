@@ -12,11 +12,11 @@ API_HASH = getenv("API_HASH", "93173102a6236d56c66af0a8d985be3d")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "6329967573:AAH2R3QhvCb5ED8X9zS0cjUmF2okbiJhtwI")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://mango:mango@cluster0.vji4zlb.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://daal:daal@cluster0.b08dqde.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001871280896"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "test")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1471469091").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5997358901 1471469091").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
@@ -45,8 +45,8 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "5"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "3"))
 
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None)
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "19609edb1b9f4ed7be0c8c1342039362")
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "409e31d3ddd64af08cfcc3b0f064fcbe")
 
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "5"))
 SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
