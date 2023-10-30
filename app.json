@@ -39,12 +39,12 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "5997358901 1471469091",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "",
+        "value": "BQBiupVXMvfwBO2PPneLxJYg81Rqy38efpgB4pAEZXzvIeJBSUnUudxB72V2lRF_O4o07UffKnLM6crtd3hGpZttey0WmDTMBxRgU3EFhBvFtaDTn3S5DLJ6sOJFAILzl5PUBuqSJ6QkMRVDjVwGd5-haYLv8VJ0w35jvlTgsCLA0d2V2SASk905oYePhlYX_fFGhGYp-Po8R3KwVYDwYnLe3XO7oLCicbeT_bt_Y4pZw9ISnDWBqSA9Xjk0UTO2AnsAAdhc1B5rxIH6afy4fiA0boXfdVETNqk3jTT-WEnciKsTcjDS-XPQQVPddQELKcQU5ZkUbhq1Mx7wnazCZZc9eIxHLQA",
         "required": true
       },
       "HEROKU_API_KEY": {
