@@ -44,7 +44,7 @@
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "BQBiupVXMvfwBO2PPneLxJYg81Rqy38efpgB4pAEZXzvIeJBSUnUudxB72V2lRF_O4o07UffKnLM6crtd3hGpZttey0WmDTMBxRgU3EFhBvFtaDTn3S5DLJ6sOJFAILzl5PUBuqSJ6QkMRVDjVwGd5-haYLv8VJ0w35jvlTgsCLA0d2V2SASk905oYePhlYX_fFGhGYp-Po8R3KwVYDwYnLe3XO7oLCicbeT_bt_Y4pZw9ISnDWBqSA9Xjk0UTO2AnsAAdhc1B5rxIH6afy4fiA0boXfdVETNqk3jTT-WEnciKsTcjDS-XPQQVPddQELKcQU5ZkUbhq1Mx7wnazCZZc9eIxHLQA",
+        "value": "BQDBJoWhBOiablbBTBC1CwBcmmrUCvcIas4nO7hQwiBD9RKy4tgkGTQQdcJOxULzeNgBeeWY9EU9Y0hYJIRGoykSwIg_TuR4l8hrQIG1yaBazF1cRXs3OIELCuqfMMd2X5sEzToFu2ju7osPJpsHI8va1WCjNUSiCkGrlzlpoMfI7ddyXKBwscPwTn3CcK8R78hL6jybvLdk8MnRIGUjPY0K6_0k7AEXDaSnW7WjdYEiAgrsCta4cxLSc2ZwQ-U7hZLg7ZkPeZNWtcNuu6NjNKjY6rvXuKVxfm3nAjFB8VtD8LHKOAGnPOpj3YsLBM7_of186pBG_gmfuQi2Y5TTTgzOeIxHLQA",
         "required": true
       },
       "HEROKU_API_KEY": {
