@@ -14,37 +14,37 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "27167652",
+        "value": "",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "93173102a6236d56c66af0a8d985be3d",
+        "value": "",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
-        "value": "6329967573:AAH2R3QhvCb5ED8X9zS0cjUmF2okbiJhtwI",
+        "value": "",
         "required": true
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "mongodb+srv://daal:daal@cluster0.b08dqde.mongodb.net/?retryWrites=true&w=majority",
+        "value": "",
         "required": true
       },
       "MUSIC_BOT_NAME": {
         "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
-        "value": "⚜Ťнαℓαιναямυѕιcвσт⚜",
+        "value": "",
         "required": true
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5997358901 1471469091",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory.",
-        "value": "BQDBJoWhBOiablbBTBC1CwBcmmrUCvcIas4nO7hQwiBD9RKy4tgkGTQQdcJOxULzeNgBeeWY9EU9Y0hYJIRGoykSwIg_TuR4l8hrQIG1yaBazF1cRXs3OIELCuqfMMd2X5sEzToFu2ju7osPJpsHI8va1WCjNUSiCkGrlzlpoMfI7ddyXKBwscPwTn3CcK8R78hL6jybvLdk8MnRIGUjPY0K6_0k7AEXDaSnW7WjdYEiAgrsCta4cxLSc2ZwQ-U7hZLg7ZkPeZNWtcNuu6NjNKjY6rvXuKVxfm3nAjFB8VtD8LHKOAGnPOpj3YsLBM7_of186pBG_gmfuQi2Y5TTTgzOeIxHLQA",
+        "value": "",
         "required": true
       },
       "HEROKU_API_KEY": {
@@ -59,7 +59,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "-1001871280896",
+        "value": "",
         "required": true
       },
       "UPSTREAM_REPO": {
@@ -70,11 +70,6 @@
       "UPSTREAM_BRANCH": {
         "description": "Upstream Repo's Branch Name",
         "value": "master",
-        "required": true
-      },
-      "GIT_TOKEN": {
-        "description": "Your GitHub Git Token",
-        "value": "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",
         "required": true
       }
     },
